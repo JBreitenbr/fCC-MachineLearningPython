@@ -1,6 +1,6 @@
-# Linear-Regression-Health-Costs-Classifier
+## Linear-Regression-Health-Costs-Classifier
 
-## Assignment
+### Assignment
 
 In this challenge, you will predict healthcare costs using a regression algorithm.
 
