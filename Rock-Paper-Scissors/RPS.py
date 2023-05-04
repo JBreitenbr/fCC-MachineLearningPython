@@ -11,7 +11,7 @@ def markov4(history, play_order):
         play_order["".join(history[-4:])] += 1
     else:
         play_order["".join(history[-4:])] = 1
-    possible = ["".join(history[-(4 - 1) :]) + k for k in w]
+    possible = ["".join(history[-3:]) + k for k in w]
     for p in possible:
         if not p in play_order.keys():
             play_order[p] = 0
