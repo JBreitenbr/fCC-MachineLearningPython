@@ -1,8 +1,6 @@
 # Scientific Computing with Python
 
-This respository contains my solutions to the Machine Learning with Python Certification projects
-as well as the respective test and data files.
-
+This respository contains my solutions to the Machine Learning with Python Certification projects.
 - Rock Paper Scissors
 - Cat Dog Image Classifier
 - Book Recommendation Engine
