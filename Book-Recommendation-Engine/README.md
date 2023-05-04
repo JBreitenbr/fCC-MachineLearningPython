@@ -28,3 +28,6 @@ should return:
     ['The Vampire Lestat (Vampire Chronicles, Book II)', 0.5178412199020386]
   ]
 ]
+Notice that the data returned from get_recommends() is a list. The first element in the list is the book title passed into the function. The second element in the list is a list of five more lists. Each of the five lists contains a recommended book and the distance from the recommended book to the book passed into the function.
+
+If you graph the dataset (optional), you will notice that most books are not rated frequently. To ensure statistical significance, remove from the dataset users with less than 200 ratings and books with less than 100 ratings.
