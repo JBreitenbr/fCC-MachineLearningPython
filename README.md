@@ -5,5 +5,4 @@ This respository contains my solutions to the Machine Learning with Python Certi
 - Cat Dog Image Classifier
 - Book Recommendation Engine
 - Linear Regression Health Costs Classifier
-- Probability Calculator
 - SMS Text Classifier
