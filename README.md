@@ -1,4 +1,4 @@
-# Scientific Computing with Python
+# Machine Learning with Python
 
 This respository contains my solutions to the Machine Learning with Python Certification projects.
 - Rock Paper Scissors
