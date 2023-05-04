@@ -6,12 +6,16 @@ w=["R","P","S"]
 ord={}
 resp={"R":"P","P":"S","S":"R"}
 cnt=[0]
+
+def join(lst):
+    return "".join(lst)
+
 def markov4(history, play_order):
-    if "".join(history[-4:]) in play_order.keys():
-        play_order["".join(history[-4:])] += 1
+    if join(history[-4:]) in play_order.keys():
+        play_order[join(history[-4:])] += 1
     else:
-        play_order["".join(history[-4:])] = 1
-    possible = ["".join(history[-3:]) + k for k in w]
+        play_order[join(history[-4:])] = 1
+    possible = [join(history[-3:]) + k for k in w]
     for p in possible:
         if not p in play_order.keys():
             play_order[p] = 0
