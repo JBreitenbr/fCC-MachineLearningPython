@@ -11,10 +11,10 @@ def markov4(history, play_order):
         play_order["".join(history[-4:])] += 1
     else:
         play_order["".join(history[-4:])] = 1
-    possible = ["".join(history[-(4 - 1) :]) + k for k in ["R", "P", "S"]]
-    for pm in possible:
-        if not pm in play_order.keys():
-            play_order[pm] = 0
+    possible = ["".join(history[-(4 - 1) :]) + k for k in w]
+    for p in possible:
+        if not p in play_order.keys():
+            play_order[p] = 0
     predict = max(possible, key=lambda key: play_order[key])
     return predict[-1]
 
