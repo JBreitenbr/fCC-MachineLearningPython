@@ -10,7 +10,7 @@ The first two cells of this notebook import libraries and the data.
 
 Make sure to convert categorical data to numbers. Use 80% of the data as the train_dataset and 20% of the data as the test_dataset.
 
-pop off the "expenses" column from these datasets to create new datasets called train_labels and test_labels. Use these labels when training your model.
+Pop off the "expenses" column from these datasets to create new datasets called train_labels and test_labels. Use these labels when training your model.
 
 Create a model and train it with the train_dataset. Run the final cell in this notebook to check your model. The final cell will use the unseen test_dataset to check how well the model generalizes.
 
