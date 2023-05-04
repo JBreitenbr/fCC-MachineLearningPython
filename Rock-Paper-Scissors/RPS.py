@@ -1,7 +1,6 @@
 import random as rnd
 rnd.seed(149)
 guess=[""]
-o_guess=[""]
 w=["R","P","S"]
 ord={}
 resp={"R":"P","P":"S","S":"R"}
@@ -25,15 +24,15 @@ def markov4(history, play_order):
 
 def player(prev_play,opponent_history=[]):
     if prev_play == "" or cnt[0]>69:
-      prev_play=rnd.choice(w)
-      cnt[0]=0
+       prev_play=rnd.choice(w)
+       cnt[0]=0
     hist=opponent_history
     hist.append(prev_play)
     cnt[0]+=1
     if len(hist) >= 4:
-        p=resp[markov4(hist,ord)]
-        guess[0]=p
+       pred=resp[markov4(hist,ord)]
+       guess[0]=pred
     if guess[0]=="":
-      guess[0]=rnd.choice(w)
+       guess[0]=rnd.choice(w)
     return guess[0]
 
